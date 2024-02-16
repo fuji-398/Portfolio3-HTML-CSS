@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+/* common part
+--------------------- */
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: #f4f9ff;
+    font-family: Meiryo;
+    font-size: 0.875rem;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper1000 {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper600 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic", "ヒラギノ角ゴ";
+}
+
+h3 {
+    font-size: 1.125rem;
+}
+
+/* header
+--------------------- */
+.header-container {
+    display: flex;
+    line-height: 0px;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: block;
+    margin: 60px 0 15px 0;
+    height: 18px;
+}
+
+/* main
+--------------------- */
+.mainvisual {
+    margin-bottom: 56px;
+}
+
+.index-container {
+    background-color: #ffffff;
+    padding: 28px 0 30px 0;
+    margin-bottom: 60px;
+}
+
+.index-container ol {
+    list-style-position: inside;
+}
+
+.index-container li:first-child {
+    margin-top: 10px;
+}
+
+.index-container li {
+    margin-bottom: 20px;
+    letter-spacing: -0.15px;
+}
+
+.index-container li:last-child {
+    margin-bottom: 0px;
+}
+
+.detail-container {
+    margin-bottom: 115px;
+}
+
+.detail-container h2 {
+    margin-bottom: 8px;
+}
+
+.d-layout-container {
+    display: flex;
+}
+
+.d-img {
+    height: 270px;
+    margin-right: 60px;
+}
+
+.info-li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 0 16px 0;
+    margin: 20px 0 23px 0;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+}
+
+.info-li dt {
+    width: 25%;
+}
+
+.info-li dd {
+    width: 75%;
+}
+
+.d-layout-container p {
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    margin-bottom: 20px;
+}
+
+.d-link {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+}
+
+.d-link:hover {
+    opacity: 0.5;
+}
+
+/* footer
+--------------------- */
+footer p {
+    font-size: 0.625rem;
+    margin-bottom: 17px;
+    letter-spacing: 0.3px;
+}
+
+/* media query
+--------------------- */
+@media (max-width: 1000px) {
+    /* common part
+    --------------------- */
+    .wrapper1000 {
+        padding: 0 10px;
+    }
+
+    .wrapper600 {
+        padding: 0 40px;
+    }
+
+    /* main
+    --------------------- */
+
+    .index-container {
+        padding: 28px 10px 30px 0;
+    }
+
+    .index-container ol li {
+        margin-left: 1.35em;
+        text-indent: -1.35em;
+    }
+
+    .detail-container {
+        margin-bottom: 114px;
+    }
+
+    .d-layout-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .d-img {
+        height: auto;
+        max-width: 295px;
+        margin: 0 0 26px 0;
+    }
+    .info-li {
+        padding: 16px 0 14px 0;
+        margin: 20px 0 25px 0;
+    }
+}
